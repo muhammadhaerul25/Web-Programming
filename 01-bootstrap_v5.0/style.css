@@ -1,0 +1,55 @@
+/*selector universal*/
+* {
+	font-family: Calibri;
+}
+
+
+
+/*selector tag*/
+body {  }
+
+header {  }
+
+h1 {  }
+
+h2 {  }
+
+h5 {  }
+
+p {  }
+
+
+
+/*selector class*/
+.profile {
+  text-align: center;
+}
+
+.deskripsi {
+  text-align: justify;
+}
+
+.card-text {
+  text-align: justify;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.line-nav {
+  width:200px;
+}
+
+/*selector atribut*/
+
+
+
+/*selector id*/
+#content {  }
+
+#profile {  }
+
+#project {  }
+
+#contact {  }
