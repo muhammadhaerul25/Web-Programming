@@ -1,0 +1,173 @@
+/*selector universal*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Quicksand', sans-serif;
+}
+
+
+
+/*selector tag*/
+section {
+	padding:50px 0;
+}
+
+section header h1 {
+	font-size: 32px;
+	text-align: center;
+}
+
+section h3 {
+	padding-bottom: 20px;
+	margin:20px;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	position: relative;
+}
+
+section h3::before {
+	content:'';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width:120px;
+	height:1px;
+	background-color: #ddd;
+	left: calc(50% - 60px);
+}
+
+section h3::after {
+	content:'';
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	width:40px;
+	height:4px;
+	background-color: #C0392B;
+	left: calc(50% - 20px);
+}
+
+section h5 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+section header p {
+	font-size: 16px;
+	text-align: center;
+}
+
+header:hover img {
+	transform: scale(1.2);
+	transition: 0.3s;
+}
+
+footer {
+	background-color: #333;
+	padding:50px;
+	text-align: center;
+}
+
+footer small {
+	color: #fff;
+}
+
+
+
+/*selector class*/
+.container {
+	width:80%;
+	margin:0 auto;
+}
+
+.container::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.col-3 {
+	width:33.33%;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	padding:10px 10px;
+}
+
+.card-text {
+  text-align: justify;
+}
+
+.card-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.col:hover img {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.mb-3 {
+	font-weight: bold;
+}
+
+
+/*selector id*/
+#home {
+	background-color: #FFFFFF;
+}
+
+#home img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 200px;
+	border-radius: 10px;
+	box-shadow: 0 3px 5px #ddd;
+	margin-bottom: 10px;
+}
+
+
+#profile {
+	background-color: #f9f9f9; 
+}
+
+#profile p {
+	font-size: 16px;
+	text-align: justify;
+	text-indent: 50px;
+	line-height: 25px;
+	margin-bottom: 15px;
+}
+
+#project {
+	background-color: #FFFFFF;
+}
+
+#project p {
+	font-size: 16px;
+	text-align: justify;
+	text-indent: 0px;
+}
+
+#contact {
+	background-color: #f9f9f9;
+}
+
+#contact p {
+	font-size: 16px;
+}
+
+
+/*Media*/
+@media (max-width: 768px){
+	.col-3 {
+		width:100%;
+	}
+}
